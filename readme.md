@@ -19,3 +19,4 @@
 ...
 
 - Once you've added your db config as listed above,go to the src folder from yout terminal and execute `npx sequelze db:create` 
+<!-- - Once you've added your db config as listed above,go to the src folder from yout terminal and execute `npx sequelze db:create` -->
