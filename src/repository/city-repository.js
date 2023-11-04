@@ -21,12 +21,13 @@ async deleteCity(cityId){
             id: cityId
         }
     });
+    return true; 
   } catch (error) {
     console.log("Something went wrong in the repository layer");
     throw {error};
   }
 }
-async updateCity(CityId,data){
+async updateCity(CityId,data){ //{name: "Prayagraj"}
     try {
         const city = await City.update(data,{
             where:{
@@ -45,13 +46,13 @@ async updateCity(CityId,data){
 async getCity(cityId){
      try {
         const city = await City.findByPk(cityId);
-        return City;
+        return city;
      } catch (error) {
         console.log("Something went wrong in the repository layer");
         throw {error};
         
      }
-}
+    }
 }
 
 module.exports = CityRepository;
