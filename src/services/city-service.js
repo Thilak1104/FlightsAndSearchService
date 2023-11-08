@@ -17,7 +17,7 @@ class CityService{
 
     }
 
-    async deleteCity(){
+    async deleteCity(cityId){
         try {
             const response = await this.CityRepository.deleteCity(cityId);
             return response;
@@ -29,7 +29,7 @@ class CityService{
 
     }
 
-    async updateCity(){
+    async updateCity(cityId,data){
         try {
             const city = await this.CityRepository.updateCity(cityId,data);
             return city;
@@ -41,7 +41,7 @@ class CityService{
 
     }
 
-    async getCity(){
+    async getCity(cityId){
         try {
             const city = await this.CityRepository.getCity(cityId);
             return city;
