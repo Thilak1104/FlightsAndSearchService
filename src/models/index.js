@@ -1,3 +1,6 @@
+
+// Structures how the table should look like
+
 'use strict';
 
 const fs = require('fs');

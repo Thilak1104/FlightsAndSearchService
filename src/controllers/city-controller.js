@@ -1,3 +1,6 @@
+
+// gets the request and passes to backend,after processing serves the frontend
+
 const { response } = require('express');
 const { CityService } = require('../services/index');
 /**
@@ -99,7 +102,6 @@ const update = async (req,res)=>{
 
 const getAll = async (req,res)=>{
     try {
-        console.log(req.params);
         const cities = await cityService.getAllCities(req.query);
         return res.status(200).json({
             data:cities,

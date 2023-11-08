@@ -1,3 +1,6 @@
+
+//Business Logic
+
 const { CityRepository } = require('../repository/index');
 
 class CityService{
