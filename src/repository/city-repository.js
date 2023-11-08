@@ -6,7 +6,7 @@ class CityRepository{
 async createCity({ name }){  //{name:"New Delhi"}
    try{
     const city = await City.create({
-        name
+        name:name
     });
     return city;
    } catch(error){
