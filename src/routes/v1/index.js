@@ -18,8 +18,10 @@ router.post(
      FlightMiddlewares.validateCreateFlight,
      FlightController.create
 );
-
+ 
 router.get('/flights',FlightController.getAll);
+router.get('/flights/:id',FlightController.get);
+router.patch('/flights/:id',FlightController.update);
 
 router.post('/airports',AirportController.create);
 
